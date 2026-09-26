@@ -1,235 +1,123 @@
-# Internal Compliance & Market Eligibility Decision Support Platform
+# 🌎 Region Lockup
 
-A centralized decision-support platform designed to help operations agents instantly retrieve market-specific compliance, onboarding, and eligibility requirements across the United States and Canada.
+<p align="center">
+  <img src="https://img.shields.io/badge/weekly%20users-250%2B-brightgreen?style=flat">
+  <img src="https://img.shields.io/badge/weekly%20executions-thousands-blue?style=flat">
+  <img src="https://img.shields.io/badge/error%20rate-0.03%25-success?style=flat">
+  <img src="https://img.shields.io/badge/status-production-2ea44f?style=flat">
+  <img src="https://img.shields.io/badge/version-2.0-orange?style=flat">
+</p>
 
----
+> A centralized decision-support platform that lets operations agents retrieve
+> market-specific **compliance, onboarding, and eligibility requirements** across
+> the US and Canada — with a **single region code**.
 
-## Overview
+| 📊 Production adoption | |
+|---|---|
+| Weekly active users | **250+** |
+| Weekly executions | **Thousands** |
+| Error rate | **0.03%** |
+| Markets covered | 🇺🇸 US · 🇨🇦 Canada |
+| Status | In production, actively used by operations teams |
 
-The Internal Compliance & Market Eligibility Decision Support Platform was built to solve a common operational challenge.
+## 🖼 Screenshots
 
-Agents were required to search across multiple compliance resources, documentation repositories, spreadsheets, help center articles, and regional guides to determine market-specific requirements.
+**Search interface** — one region code in, everything out:
+<p align="center"><img src="https://raw.githubusercontent.com/Mkhimer69/Region-Lockup/refs/heads/main/screenshots/search-interface.png" width="640"></p>
 
-This process was:
+**Region results** — unified market profile:
+<p align="center"><img src="https://raw.githubusercontent.com/Mkhimer69/Region-Lockup/refs/heads/main/screenshots/region-result.png" width="640"></p>
 
-- Time-consuming
-- Prone to inconsistencies
-- Dependent on agent experience
-- Difficult to scale
+**Comparison mode** — regions side-by-side:
+<p align="center"><img src="https://raw.githubusercontent.com/Mkhimer69/Region-Lockup/refs/heads/main/screenshots/comparison-mode.png" width="640"></p>
 
-To address this challenge, I designed and deployed a centralized lookup solution that allows agents to retrieve critical regional requirements through a single search.
+## 🧩 The Problem
 
-By entering a region code, agents can instantly access eligibility, compliance, vehicle, driver, insurance, inspection, and regional requirement information from one unified interface.
+Before Region Lockup, agents answered questions like *"Is this vehicle eligible in this market?"*,
+*"What inspection is required?"*, *"What's the minimum driver age?"* by searching across
+documentation repositories, spreadsheets, help-center articles, and regional guides.
 
----
+That process was:
+- ⏱ Time-consuming
+- 🔀 Prone to inconsistencies
+- 🧠 Dependent on agent experience
+- 📈 Difficult to scale
 
-## Business Problem
+## ✅ The Solution
 
-Prior to implementation, agents often had to navigate multiple systems to answer questions such as:
+Agents enter a region code and instantly receive a unified market profile:
 
-- Is this vehicle eligible in this market?
-- What inspection is required?
-- What is the minimum driver age?
-- What documentation is required?
-- Are there region-specific onboarding requirements?
-- What time is it in the driver's market?
-
-Finding this information frequently involved consulting multiple documentation sources and operational references, increasing handling time and introducing opportunities for inconsistency.
-
----
-
-## Solution
-
-The platform consolidates market requirements into a single searchable source of truth.
-
-Agents simply enter a region code and immediately receive:
-
-- Market information
-- State / Province information
-- Region classification
-- Vehicle eligibility requirements
-- Driver eligibility requirements
-- Insurance requirements
-- Inspection requirements
-- Driving history requirements
+- Market & state/province information · region classification
+- Vehicle & driver eligibility requirements
+- Insurance, inspection & driving-history requirements
 - Regional onboarding requirements
-- Local market time
+- Current local time in the driver's market
 
-The result is faster decision-making, improved operational consistency, and reduced dependence on fragmented documentation.
+## ✨ Key Features
 
----
+| Feature | What it does |
+|---|---|
+| 🔎 Instant region search | One code → full market profile |
+| ⚖️ Compliance lookup | Market-specific onboarding & compliance requirements |
+| 🚗 Vehicle eligibility | Market age limits & restrictions |
+| 🪪 Driver eligibility | Minimum age & driving-history rules |
+| 🛡️ Insurance & inspection | Per-region requirements |
+| ⚖️ Comparison mode | Multiple regions side-by-side |
+| 🕐 Real-time local clock | Live time for US & Canadian regions |
+| 💡 Autocomplete | Intelligent search suggestions |
+| 📣 Feedback loop | Built-in feedback collection for continuous improvement |
+| ⚡ Caching layer | Server-side (Script Properties) + client-side (localStorage) |
 
-## Key Features
+## 💼 Impact
 
-### Instant Region Search
-
-Quickly retrieve market requirements using a region code.
-
-### Compliance Lookup
-
-Access market-specific onboarding and compliance requirements.
-
-### Vehicle Eligibility Validation
-
-View market-specific vehicle age requirements and restrictions.
-
-### Driver Eligibility Validation
-
-Review minimum driver age and driving history requirements.
-
-### Regional Requirement Tracking
-
-Access region-specific criteria and onboarding requirements.
-
-### Market Comparison Mode
-
-Compare multiple regions side-by-side.
-
-### Real-Time Local Clock
-
-Display current local time for US and Canadian regions.
-
-### Intelligent Search Suggestions
-
-Autocomplete support helps users locate regions quickly.
-
-### Feedback Collection
-
-Built-in feedback mechanism enables continuous improvement.
-
-### Performance Optimization
-
-Server-side and client-side caching significantly reduce lookup times and improve responsiveness.
-
----
-
-## Business Value
-
-The platform transformed a multi-source research process into a single-search workflow.
-
-Instead of navigating multiple operational resources, agents can retrieve eligibility and compliance requirements instantly using a region code.
-
-Benefits include:
-
-- Reduced lookup effort
-- Faster decision making
-- Improved consistency across agents
-- Centralized operational knowledge
-- Reduced reliance on institutional knowledge
-- Enhanced onboarding support
-
----
-
-## Screenshots
-
-### Search Interface
-
-Centralized search interface enabling agents to retrieve regional requirements using a single region code.
-
-![region-result](https://raw.githubusercontent.com/Mkhimer69/Internal-Compliance-Market-Eligibility-Decision-Support-Platform/refs/heads/main/screenshots/search-interface.png)
-
----
-
-### Region Results
-
-Unified presentation of market-specific eligibility and compliance information.
-
-![region-result](https://raw.githubusercontent.com/Mkhimer69/Internal-Compliance-Market-Eligibility-Decision-Support-Platform/refs/heads/main/screenshots/region-result.png)
----
-
-### Comparison Mode
-
-Side-by-side comparison capability for evaluating multiple regions simultaneously.
-
-![comparison-mode](https://raw.githubusercontent.com/Mkhimer69/Internal-Compliance-Market-Eligibility-Decision-Support-Platform/refs/heads/main/screenshots/comparison-mode.png)
-
-
-### Production Adoption
-
-- Actively used by operations teams
-- Thousands of executions per week
-- Maintained a 0.03% error rate
-- Supports decision-making across US and Canadian markets
-
-### Operational Benefits
-
-- Reduced dependency on multiple compliance resources
-- Centralized fragmented operational knowledge
-- Improved consistency in agent decision making
-- Faster access to region-specific requirements
-- Simplified onboarding support workflows
 - Reduced lookup effort and handling time
+- Faster, more consistent decision-making across agents
+- Centralized knowledge — reduced reliance on institutional memory
+- Stronger onboarding support for new agents
 
----
+## 🛠 Technology Stack
 
-## Technology Stack
+| Layer | Technology |
+|---|---|
+| Frontend | HTML5 · CSS3 · JavaScript |
+| Backend | Google Apps Script |
+| Data | Google Sheets |
+| Caching | Script Properties (server) · localStorage (client) |
+| Extras | Autocomplete engine · comparison engine · timezone conversion · feedback workflow |
 
-### Frontend
+## 🏗 Architecture
 
-- HTML5
-- CSS3
-- JavaScript
+```mermaid
+flowchart TD
+    A[Operations Agent] --> B[Region Lookup Interface]
+    B --> C{Client cache<br/>localStorage}
+    C -- hit --> B
+    C -- miss --> D[Google Apps Script]
+    D --> E{Server cache<br/>Script Properties}
+    E -- hit --> D
+    E -- miss --> F[(Google Sheets)]
+```
 
-### Backend
-
-- Google Apps Script
-
-### Data Layer
-
-- Google Sheets
-- Script Properties Cache
-- Browser Local Storage Cache
-
-### Additional Capabilities
-
-- Dynamic Search Suggestions
-- Region Comparison Engine
-- Timezone Conversion
-- Feedback Collection Workflow
-- Performance Optimization Layer
-
----
-
-## Version History
+## 📜 Version History
 
 | Version | Highlights |
-|----------|------------|
+|---|---|
 | 2.0 | Autocomplete, feedback system, server/client caching, enhanced UI |
 | 1.5 | Region comparison, live timezone display |
-| 1.0 | Initial market eligibility and compliance lookup platform |
+| 1.0 | Initial market eligibility & compliance lookup |
+
+## 🔒 Confidentiality Notice
+
+This platform was developed for internal organizational use. Source code, production
+datasets, business rules, operational documentation, integrations, and connected
+resources are intentionally excluded from this repository due to confidentiality
+requirements. Screenshots have been redacted to protect proprietary information.
+
+This repository showcases the **business problem, solution design, architecture, and
+measurable operational impact** of the platform.
 
 ---
 
-## Architecture
-
-```text
-Operations Agent
-        │
-        ▼
- Region Lookup Interface
-        │
-        ▼
- Client-Side Cache
-(Local Storage)
-        │
-        ▼
- Google Apps Script
-        │
- ┌──────┴──────┐
- ▼             ▼
-Server Cache  Data Source
-(Properties) (Google Sheets)
-
----
-```
-## Confidentiality Notice
-
-This platform was developed for internal organizational use.
-
-Source code, production datasets, business rules, operational documentation, integrations, and connected resources are intentionally excluded from this repository due to confidentiality requirements.
-
-Screenshots have been redacted to protect proprietary information.
-
-This repository is intended to showcase the business problem, solution design, architecture, and measurable operational impact of the platform.
-
----
+<div align="center">
+<b>🌎 Region Lockup</b><br><i>One code. Every answer.</i>
+</div>
